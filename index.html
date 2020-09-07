@@ -191,25 +191,27 @@
     </section>
     <footer>
       <p class="copyright">Copyright © Shiro All Rights Reserved.</p>
+      <span>出典元： https://twitter.com/omsss22 </span>
     </footer>
+
     <!-- END contents -->
 
     <!-- js -->
     <script>
-      var nav_toggle = document.querySelector(".nav_toggle");
-      var nav = document.querySelector("nav");
+      var nav_toggle = document.querySelector('.nav_toggle');
+      var nav = document.querySelector('nav');
 
-      nav_toggle.addEventListener("click", () => {
-        nav_toggle.classList.toggle("active");
-        nav.classList.toggle("active");
+      nav_toggle.addEventListener('click', () => {
+        nav_toggle.classList.toggle('active');
+        nav.classList.toggle('active');
       });
 
-      var gnav_link = document.querySelectorAll(".gnav_link");
+      var gnav_link = document.querySelectorAll('.gnav_link');
       for (var i = 0; i < gnav_link.length; i++) {
-        gnav_link[i].addEventListener("click", () => {
-          if (nav.classList.contains("active")) {
-            nav.classList.remove("active");
-            nav_toggle.classList.remove("active");
+        gnav_link[i].addEventListener('click', () => {
+          if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            nav_toggle.classList.remove('active');
           }
         });
       }
